@@ -1,13 +1,13 @@
 {
- "key": "6f04109e",
+ "key": "192c1505",
  "stars": 0,
- "contributions": 14,
- "repos": 6,
+ "contributions": 16,
+ "repos": 7,
  "followers": 0,
  "languages": [
   [
    "JavaScript",
-   43150
+   43684
   ],
   [
    "CSS",
@@ -15,7 +15,7 @@
   ],
   [
    "HTML",
-   24707
+   28588
   ]
  ],
  "days": [
@@ -115,7 +115,7 @@
     "today": false
    },
    {
-    "c": 4,
+    "c": 6,
     "day": 22,
     "today": true
    },
@@ -129,6 +129,15 @@
  },
  "pins": [],
  "all": [
+  {
+   "name": "real-natita.github.io",
+   "url": "https://github.com/real-natita/real-natita.github.io",
+   "text": "My profile as a standalone page",
+   "fork": false,
+   "stars": 0,
+   "language": "HTML",
+   "topics": []
+  },
   {
    "name": "real-natita",
    "url": "https://github.com/real-natita/real-natita",
