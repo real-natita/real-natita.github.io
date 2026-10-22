@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Natita</title>
+<meta name="description" content="Im a new developer, mostly ai coding (vibe coding) but im still learning!">
+<link rel="icon" href="https://github.com/real-natita.png?size=64">
+<meta name="theme-color" content="#efe3d1" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1c1812" media="(prefers-color-scheme: dark)">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Natita">
+<meta property="og:title" content="Natita">
+<meta property="og:description" content="Im a new developer, mostly ai coding (vibe coding) but im still learning!">
+<meta property="og:url" content="https://real-natita.github.io/">
+<meta property="og:image" content="https://real-natita.github.io/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Natita">
+<meta name="twitter:card" content="summary_large_image">
+
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #efe3d1;
+    --fg: #1f1b13;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1c1812;
+      --fg: #ebe1d4;
+    }
+  }
+  html, body { margin: 0; }
+  body {
+    min-height: 100vh;
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.5 "Segoe UI", Roboto, system-ui, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: clamp(12px, 3vw, 40px);
+    box-sizing: border-box;
+  }
+  main {
+    width: 100%;
+    max-width: 880px;
+    text-align: center;
+  }
+  main > * { margin: 0 0 clamp(10px, 1.6vw, 18px); }
+  main > *:last-child { margin-bottom: 0; }
+  main a { display: inline-block; text-decoration: none; }
+  main img { display: inline-block; max-width: 100%; height: auto; vertical-align: middle; }
+  main img[width="auto"] { width: auto; }
+</style>
+</head>
+<body>
+<main id="content" align="center">
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg"><img src="assets/hero-light.svg" width="100%" alt="Hi, I&#x27;m Natita"></picture>
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/about-dark.svg"><img src="assets/about-light.svg" width="100%" alt="About me"></picture>
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack-dark.svg"><img src="assets/stack-light.svg" width="100%" alt="Tech stack"></picture>
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/stats-dark.svg"><img src="assets/stats-light.svg" width="100%" alt="GitHub activity"></picture>
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/wave-dark.svg"><img src="assets/wave-light.svg" width="100%" alt=""></picture>
+
+<a href="https://github.com/real-natita?tab=repositories"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/button-1-dark.svg"><img src="assets/button-1-light.svg" width="auto" alt="All repositories"></picture></a>
+
+<a href="https://metawka.github.io/expressive-profile/?from=real-natita"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/credit-dark.svg"><img src="assets/credit-light.svg" width="auto" alt="Made with Expressive Profile"></picture></a>
+
+</main>
+<script>
+  // Keep the page in sync with the README that the Expressive Profile action
+  // regenerates every hour. The markup above is the no-JS fallback.
+  fetch("README.md", { cache: "no-cache" })
+    .then((r) => (r.ok ? r.text() : Promise.reject(r.status)))
+    .then((md) => {
+      const doc = new DOMParser().parseFromString(md, "text/html");
+      const body = doc.body.firstElementChild;
+      if (body && body.textContent.trim()) {
+        document.getElementById("content").innerHTML = body.innerHTML;
+      }
+    })
+    .catch(() => {});
+</script>
+</body>
+</html>

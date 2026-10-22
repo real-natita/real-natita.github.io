@@ -1,0 +1,13 @@
+{
+  "name": "profile-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static GitHub Pages version of the Expressive Profile README",
+  "type": "module",
+  "scripts": {
+    "og": "node og.mjs"
+  },
+  "dependencies": {
+    "sharp": "^0.35.5"
+  }
+}
