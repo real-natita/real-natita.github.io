@@ -1,21 +1,25 @@
 {
- "key": "2c8144a5",
+ "key": "982700b0",
  "stars": 0,
- "contributions": 22,
- "repos": 7,
+ "contributions": 26,
+ "repos": 9,
  "followers": 0,
  "languages": [
   [
+   "HTML",
+   90823
+  ],
+  [
    "JavaScript",
-   43684
+   69315
   ],
   [
    "CSS",
-   40858
+   59691
   ],
   [
-   "HTML",
-   28290
+   "Python",
+   24465
   ]
  ],
  "days": [
@@ -115,7 +119,7 @@
     "today": false
    },
    {
-    "c": 0,
+    "c": 4,
     "day": 26,
     "today": true
    },
@@ -124,11 +128,34 @@
   ]
  ],
  "streak": {
-  "current": 0,
+  "current": 1,
   "longest": 1
  },
  "pins": [],
  "all": [
+  {
+   "name": "fakelock",
+   "url": "https://github.com/real-natita/fakelock",
+   "text": "CatCrypt — полноэкранный пранк-локер на Python/tkinter. Без шифрования, без сети, выход по Ctrl+Q",
+   "fork": false,
+   "stars": 0,
+   "language": "Python",
+   "topics": [
+    "prank",
+    "python",
+    "tkinter",
+    "fake-ransomware"
+   ]
+  },
+  {
+   "name": "historia-5-grecja",
+   "url": "https://github.com/real-natita/historia-5-grecja",
+   "text": "Powtórka rozdziału II „Starożytna Grecja” — historia, klasa 5 (Wczoraj i dziś)",
+   "fork": false,
+   "stars": 0,
+   "language": "HTML",
+   "topics": []
+  },
   {
    "name": "real-natita.github.io",
    "url": "https://github.com/real-natita/real-natita.github.io",
